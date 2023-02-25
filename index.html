@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="stylesheet" href="function.css">
+</head>
+<body>
+    <h1>FUNCTIONS</h1>
+    <hr>
+    <br>
+    <span>QUESTION 1.</span>&nbsp;
+    <P>Create one function with zero parameter having a console statement.
+    </P>
+    <span>SOLUTION.</span>
+    <pre>function zeroParameter(a){
+        console.log("Hello!World!");
+      }
+      zeroParameter();
+    </pre>
+
+    <span>Output:</span>&nbsp;"Hello!World!"
+    <br><br>
+    <hr>
+    <br>
+
+    <span>QUESTION 2.</span>&nbsp;
+    <P>Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</P>
+    <span>SOLUTION.</span>
+    <pre>function addTwoNo(a,b){
+        let sum=a+b;
+        console.log("Sum of Two No:"+sum);
+      }
+      addTwoNo(3,4);
+    </pre>
+      <span>Input:</span>&nbsp;a=3   b=4
+     
+     <br>
+      <span>Output:</span>&nbsp;Sum of Two No:7
+      <br><br><br>
+      <hr>
+      <br>
+
+    <span>QUESTION 3.</span>&nbsp;
+    <P>Create one arrow function</P>
+    <span>SOLUTION.</span>
+    <pre>const addTwoNo=(A,B)=>{
+        let sum=A+B;
+        console.log("Sum of Two No:"+sum);
+      }
+      addTwoNo(3,4)</pre>
+
+      <span>Input:</span>&nbsp;A=3  B=4
+     <br>
+      <span>Output:</span>&nbsp;Sum of Two No:7
+      <br><br>
+      <hr>
+      <br>
+
+    <span>QUESTION 4.</span>&nbsp;
+    <p>Print output:</p>
+    <span>SOLUTION.</span>
+    <pre>
+        var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();
+    </pre>
+
+      <span>Output:</span>&nbsp;undefined
+      <br><br>
+      <hr>
+      <br>
+
+    <span>QUESTION 5.</span>&nbsp;
+    <p>Print output:</p>
+    <span>SOLUTION.</span>
+    <pre>
+        var x = 21;
+        girl ();
+        console.log(x)
+    function girl() {
+        console.log(x);
+        var x = 20;
+    };
+    
+    </pre>
+    <span>Output:</span>&nbsp;
+      <pre class="pre1">
+        undefined
+        21
+      </pre>
+      <br><br><br><br><br>
+      <hr>
+      <br>
+
+
+    <span>QUESTION 6.</span>&nbsp;
+    <p>Print output:</p>
+    <span>SOLUTION.</span>
+    <pre>
+        var x = 21;
+        a();
+        b();
+        
+        function a() {   
+           x = 20;
+          console.log(x);
+        };
+
+
+        function b() {
+            x = 40;
+           console.log(x);
+        }; 
+    </pre>
+    <span>Output:</span>&nbsp;
+      <pre class="pre1">
+        20
+        40
+      </pre>
+      <br><br><br><br><br>
+      <hr>
+      <br>
+
+
+    <span>QUESTION 7.</span>&nbsp;
+    <p>Write a function that accepts parameter "N" and returns factorial of "N".</p>
+    <span>SOLUTION.</span>
+    <pre>
+        function findFactorial(N){
+            let result=1;
+            for(let i=1;i<=N;i++){
+              result*=i;
+            }
+            return result;
+        };
+
+        let N = 5;
+        let factorial = findFactorial(N);
+        console.log(factorial);
+    </pre>
+
+      <span>Output:</span>&nbsp;120
+      <br><br>
+      <hr>
+      <br>
+</body>
+</html>
